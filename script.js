@@ -71,7 +71,6 @@ document.querySelectorAll(".product-card").forEach(product => {
 
 });
 
-
 function updateCart() {
 
   if (totalItems === 0) {
