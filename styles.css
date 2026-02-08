@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    display: flex;
+    border-top: 1px solid #ccc;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 40px 30px;
+    border-right: 1px solid #ddd;
+}
+.searchBox i{
+    font-size: 20px;
+}
+.headerAddress h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #1f1f1f; 
+} 
+.headerAddress p{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #686b78;
+} 
+.headerAddress {
+    padding-left: 55px;
+    padding-bottom: 25px;
+    padding-right: 130px;
+    padding-top: 25px;
+}
+.searchBox {
+    flex-grow: 1;
+    background-color: #f8f8f8;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+
+.searchBox button {
+    padding: 21px;
+    border: none;
+    background-color: transparent;
+}
+.searchBox input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+.searchBox input:focus {
+    outline: none;
+}
+.headerBtn {
+    display: flex;
+    gap: 100px;
+    margin-right: 10px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+    padding-right: 45px;
+    padding-top: 25px;
+}
+.headerBtn button {
+    padding: 15px;
+    font-size: 25px;
+    background-color: transparent;
+    gap: 25px;
+    color: #5c5a5a;
+    border: none;
+}
+.headerBtn button:last-child {
+    border-radius: 10px;
+    background: #0c831f;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+.section-1 {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.side-section{
+    flex: 0 0 120px;
+}
+
+.side-section .slide-area{
+    height: 80vh;
+    width: 120px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.slide-area {
+    border: 1px solid #ccc;
+}
+.side-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 4px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.side-images img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 8px; 
+    flex: 1;
+    height: 80vh;
+    overflow-y: auto;
+    background-color: #EDF0EF;
+    border: 1px solid #ccc;
+}
+.product-card{
+  flex: 0 0 calc(16.66% - 14px); 
+  height: 350px;             
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.product_image {
+  height: auto; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px; 
+  justify-content: center;
+}
+.product_image img {
+  height: 180px;
+  width: auto;
+}
+.section-2{
+    display: flex;
+    gap: 20px;
+    padding-left: 90px;  
+    padding-right: 90px;
+   
+}
+.section-3 {
+    padding-left: 90px;  
+    padding-right: 90px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding-left: 79px;
+    padding-right: 79px;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+.delivery-time {
+  display: inline-block;
+  background: #faf9f9;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+.product-name {
+  line-height: 1.3;
+  font-size: 14px;
+  margin: 4px 0 2px; 
+}
+.product-qty {
+  font-size: 12px;
+  color: #777;
+  margin: 0 0 12px;
+}
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  font-weight: bold;
+  font-size: 14px;
+}
+.add-btn {
+  border: 1px solid #0a8f08;
+  background: #fff;
+  color: #0a8f08;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #0a8f08;
+  color: #fff;
+}
+.one_heading {
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+.one_para {
+    line-height: 1.4;
+    color: #6B6F76;
+}
+.two_heading {
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+.two_para {
+    line-height: 1.4;
+    color: #6B6F76;
+}
+.two_para p {
+    font-size: 5px;
+}
+.info-box {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6B6F76;
+}
+.info-box strong {
+    color: #000;
+}
+.info-para {
+    padding-top: 16px;
+}
+.second_heading {
+    padding-top: 15px;
+}
+.price-container {
+  max-width: 700px;
+}
+h2 {
+  margin-bottom: 15px;
+}
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.price-list {
+  padding-left: 20px;
+  margin: 0;
+}
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 14px;
+}
+.name {
+  max-width: 80%;
+  color: #0a8f08;
+}
+.rate {
+  font-weight: 500;
+}
+.update {
+  font-size: 12px;
+  margin-top: 15px;
+  font-style: italic;
+  color: #555;
+}
+.below_content {
+    display: flex;
+    padding-top: 25px;
+    gap: 40px;  
+}
+.below_para {
+    padding-top: 35px;
+    color: #6B6F76;
+}
+.price-container {
+    padding-top: 15px;
+    flex: 1;   
+    padding: 20px;
+}
+.below_1 {
+    flex: 1;      
+}
+.section_4 {
+    width: 34%;
+    background: #fff;
+    padding-left: 60px;
+}
+.content_1 {
+    display: flex;
+    gap: 90px; 
+}
+.footer_heading {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+.items {
+    list-style: none;  
+}
+
+.items li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #666666;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.items li:hover {
+    color: #000;
+}
+.section_categories {
+    background: #fff;
+}
+.footer_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 87vh;
+}
+.categories_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+}
+.categories_title {
+    font-size: 22px;
+     font-family: 'Inter', sans-serif;
+       font-weight: 600; 
+    padding-right: 18px;
+}
+.see_all {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #0C831F; 
+    font-weight: 500;
+    text-decoration: none;
+}
+.see_all:hover {
+    text-decoration: underline;
+}
+.categories_content {
+    display: flex;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.cat_column {
+    padding-right: 70px;
+    margin-right: 20px;
+}
+.cat_items {
+    list-style: none;
+    margin: 0;
+}
+.cat_items li {
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.cat_items li:hover {
+    color: #000;
+}
+.app_store {
+    width: 92px;
+    height: 30px;
+    border-radius: 0px;
+    object-fit: fill; 
+    cursor: default;
+}
+.company_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.download_appbutton {
+    display: flex;
+    padding-right: 10px;
+}
+.social_platform {
+    display: flex;
+}
+.platform img {
+    height: 45px;
+    width: 120px;
+    object-fit:fill;
+}
+.company_para {
+    padding-right: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7E7E7E;
+}
+.appss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Download_link {
+    padding-right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+.platform {
+    padding-right: 20px;
+}
+.social_site {
+    padding-right: 30px;
+}
+.last_container {
+    padding-left: 50px;
+    padding-bottom: 2px;
+    padding-right: 50px;
+    padding-top: 3px;
+}
+.last_para {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 17.2px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6B6F76;
+}
+.top_scroll_button i {
+  color: #0c831f;
+  font-size: 50px;
+}
+.top_scroll_button {
+    bottom: 31px;
+    height: 42px;
+    position: fixed;
+    right: 32px;
+    transition: 0.3s ease-in-out;
+    width: 55px;
+}
+#cartBtn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+/* Cart Disabled State */
+#cartBtn.disabled {
+  background: #ddd !important;
+  color: #888 !important;
+  cursor: not-allowed;
+}
+
+/* Added Button Style */
+.add-btn.added {
+  background: #0c831f;
+  color: #fff;
+  border-color: #0c831f;
+  cursor: default;
+}
+
+/* Blinkit Cart Button */
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #0c831f;
+  color: white;
+  font-weight: 600;
+}
+
+.cart-btn i {
+  font-size: 20px;
+}
+
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: left;
+}
+
+#cartItems {
+  font-size: 13px;
+}
+
+#cartPrice {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Disabled State */
+.cart-btn.disabled {
+  background: #ddd !important;
+  color: #888 !important;
+}
+.add-btn {
+  border: 1px solid #0c831f;
+  background: white;
+  color: #0c831f;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.qty-box {
+  display: none;
+  align-items: center;
+  border: 1px solid #0c831f;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 90px;
+}
+
+.qty-box button {
+  background: #0c831f;
+  color: white;
+  border: none;
+  width: 28px;
+  cursor: pointer;
+}
+
+.qty-box span {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Hide initially */
+.qty-box {
+  display: none;
+}
+.qty {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Fixed width container (taaki size change na ho) */
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-row .add-btn,
+.price-row .qty-box {
+  width: 90px;        /* FIXED WIDTH */
+  height: 34px;       /* FIXED HEIGHT */
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ADD Button Style */
+.add-btn {
+  border: 1px solid #0c831f;
+  background: #fff;
+  color: #0c831f;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+.add-btn:hover {
+  background: #0c831f;
+  color: #fff;
+}
+
+/* Quantity Box (Green Background) */
+.qty-box {
+  display: none;
+   background: #0c831f;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+/* + - Button */
+.qty-box button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  width: 28px;
+  cursor: pointer;
+}
+
+/* Quantity Number */
+.qty {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Smooth Transition */
+.add-btn,
+.qty-box {
+  transition: 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+/* Main Button */
+.add-btn {
+  width: 90px;
+  height: 34px;
+
+  border: 1px solid #0c831f;
+  background: #fff;
+  color: #0c831f;
+
+  border-radius: 6px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+  overflow: hidden;
+}
+
+/* Active (After Click) */
+.add-btn.active {
+  background: #0c831f;
+  color: #fff;
+}
+
+/* Counter Hide */
+.add-btn .counter {
+  display: none;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 6px;
+}
+
+/* Show Counter */
+.add-btn.active .counter {
+  display: flex;
+}
+
+/* Hide ADD Text */
+.add-btn.active .add-text {
+  display: none;
+}
+
+/* + - */
+.add-btn .minus,
+.add-btn .plus {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Qty */
+.add-btn .qty {
+  font-size: 14px;
+  min-width: 16px;
+  text-align: center;
+}
+

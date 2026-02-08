@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <div class="logo"><svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z" fill="#F8CB46"></path><path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path><path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path><path d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z" fill="#F8CB46"></path><path d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z" fill="#F8CB46"></path><path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path><path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path><path d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z" fill="#54B226"></path><path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path></svg>
+        </div>
+
+        <div class="headerAddress">
+            <h3>Delivery in 13 minutes</h3>
+            <p>D50 Noida Uttar Pradesh</p>
+        </div>
+    </div>
+    <form class="searchBox">
+       <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text"/>
+    </form>
+    <div class="headerBtn">
+        <button>Account</button>
+       <button id="cartBtn" class="cart-btn disabled">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-info" id="cartText">My Cart</div>
+      </button>
+    </div>
+</header>
+<section class="section-1">
+    <div class="heading-Milk">
+        <h4>Buy Milk Online</h4>
+    </div>
+</section>
+
+
+<section class="section-2">
+  <section class="side-section">
+      <div class="slide-area">
+          <div class="side-images"><img src="images/amul milk.png" alt="">Milk</div>
+          <div class="side-images"><img src="images/bread.png" alt="">Bread & pav </div>
+          <div class="side-images"><img src="images/eggs.png" alt="">Eggs</div>
+          <div class="side-images"><img src="images/flackers.png" alt="">Flakes & Kids Cereals</div>
+          <div class="side-images"><img src="images/mueslie.png" alt="">Muesli & Granola</div>
+          <div class="side-images"><img src="images/oats.png" alt="">Oats</div>
+          <div class="side-images"><img src="images/panner.png" alt="">Paneer & Tofu</div>
+          <div class="side-images"><img src="images/curd.png" alt="">Curd & Yogurt</div>
+          <div class="side-images"><img src="images/butter.png" alt="">Butter & More</div>
+          <div class="side-images"><img src="images/cheese.png" alt="">Cheese</div>
+          <div class="side-images"><img src="images/vermaicel.png" alt="">Cream & Whitener</div>
+       </div>
+  </section>
+
+<section class="main-content">
+    <div class="product-card">
+        <div class="product_image">
+            <img src="images/1fit life.jpg" alt="milk1">
+        </div>
+          <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                <span class="price">₹10</span>
+                <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+              </div>
+    </div>
+
+    
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/image1.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/image2.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/image3.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                <span class="price">₹10</span>
+                <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+              </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/image4.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/image5.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="images/amul milk.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                <span class="price">₹10</span>
+                <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+              </div>
+    </div>
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image6.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image7.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image8.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image9.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image10.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image11.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+             <img src="images/image12.png" alt="">
+        </div>
+
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+
+     <div class="product-card">
+        <div class="product_image">
+             <img src="images/image13.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+     <div class="product-card">
+        <div class="product_image">
+             <img src="images/image14.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image15.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+
+     <div class="product-card">
+         <div class="product_image">
+            <img src="images/image16.png" alt="">
+         </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+         </div>
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+       </div>
+
+     <div class="product-card">
+        <div class="product_image">
+           <img src="images/image17.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+     <div class="product-card">
+        <div class="product_image">
+            <img src="images/image18.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+             <img src="/images/buffalomilk.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                  <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+            <img src="/images/cowmilk.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+        <div class="product-card">
+        <div class="product_image">
+             <img src="/images/image19.png" alt="">
+        </div>
+
+         <div class="delivery-time">
+             ⏱ 8 MINS
+          </div>
+
+
+              <h3 class="product-name">
+                  Mother Dairy FIT Life Homogenized Double...
+              </h3>
+
+                 <p class="product-qty">115 ml</p>
+
+   
+              <div class="price-row">
+                 <span class="price">₹10</span>
+                 <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+             </div>
+    </div>
+
+
+    <div class="product-card">
+        <div class="product_image">
+             <img src="/images/image20.png" alt="">
+        </div>
+
+        <div class="delivery-time">
+             ⏱ 8 MINS
+        </div>
+
+
+        <h3 class="product-name">Mother Dairy FIT Life Homogenized Double...</h3>
+        <p class="product-qty">115 ml</p>
+        <div class="price-row">
+            <span class="price">₹10</span>
+            <button class="add-btn"> 
+                  <span class="add-text">ADD</span>
+                  <span class="counter">
+                  <span class="minus">-</span>
+                  <span class="qty">1</span>
+                  <span class="plus">+</span>
+                  </span>
+                </button>
+        </div>
+    </div>
+</section>
+</section>
+
+
+<section class="section-3">
+    <div class="top_scroll_button">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+    </div>
+    <div class="para_1">
+        <h3 class="one_heading">Milk Online</h3>
+        <p class="one_para">The richness of milk as nature’s perfect food is demonstrated by its high content of essential nutrients, variety in cooking, and most importantly its indispensable role in sustaining life. Milk has been more than just a biological necessity for human consumption since it originated as an essential diet for young mammals.</p>
+    </div>
+
+    <div class="para_1">
+        <h3 class="one_heading">Composition:</h3>
+        <p class="one_para">Primarily, milk contains water, proteins, fats, carbohydrates, vitamins, and minerals that together determine its nutritive value and sensory properties. Water accounts for about 87% of the total volume of milk making it a major component. Proteins such as casein and whey contain all the necessary amino acids required for growth and development (Tungland & Meyer 2018). The lipid components contain saturated fats, monounsaturated fats, and polyunsaturated fats which are responsible for taste enhancement in milk but also act as carriers for fat-soluble vitamins including A, D, E and K among others. Primarily lactose is the principal carbohydrate providing an energy source while facilitating mineral absorption (Young et al., 2013). Besides these elements, there are other vital minerals such as calcium, phosphorus, potassium, and magnesium, which help to retain good muscle function, bone health processes along metabolic processes</p>
+    </div>
+
+    <div class="para_1">
+        <h3 class="one_heading">Types of Milk:</h3>
+        <p class="one_para">Different types of milk depend on their origin and composition:</p>
+
+        <h4 class="two_heading">Cow’s Milk:</h4>
+        <p class="two_para">Cow’s milk is regarded as one of the most popular types of milk globally both in terms of consumption and recognition. It holds great importance because it consists of proteins calcium vitamins among many others needed by our bodies. Furthermore; cow’s milk is used in diverse culinary creations ranging from healthy breakfast cereals to heavenly desserts due to its creamy texture with mild flavor (Bowen et al., 2016).</p>
+
+        <h4 class="two_heading">Buffalo’s Milk:</h4>
+        <p class="two_para">Buffalo's milk can be considered equivalent to cows’ but it is richer or creamier than such kind. Having slightly different components from those found in bovine versions buffalo's have higher fat contents hence they are used to make creamy dairy products for example cheese and yoghurt (Tungland & Meyer 2018). Additionally, buffalo’s milk tends to be tastier thus enhancing the flavor of different meals from sweet treats to savory foods.</p>
+    </div>
+
+    <div class="para_1">
+        <h3 class="one_heading">Nutritional Values:</h3>
+        <p class="one_para">Milk, irrespective of its source, serves as a powerhouse of essential nutrients vital for human sustenance. Here are some key nutritional components found in milk:</p>
+
+     
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Beverages:</strong> Milk serves as the cornerstone of countless beverages, ranging from the simplicity of a comforting glass of warm milk to the sophistication of frothy cappuccinos and velvety milkshakes. Its creamy consistency and neutral flavor provide a canvas for culinary exploration, infusing each concoction with a touch of wholesome goodness.
+          </span>
+        </p>
+        
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Cooking and Baking:</strong>In the realm of gastronomy, milk assumes the role of a culinary alchemist, weaving its magic into an array of savory and sweet creations. From creamy sauces and velvety soups to decadent cakes and delicate pastries, milk lends its moisture, richness, and subtle sweetness to elevate dishes to culinary perfection.
+          </span>
+        </p>
+
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Dairy Products:</strong>Milk serves as the lifeblood of the dairy industry, birthing an array of delectable delights ranging from creamy cheeses and tangy yogurts to indulgent creams and velvety ice creams. Each dairy product bears testament to milk's transformative powers, offering a symphony of flavors and textures to tantalize the taste buds.
+          </span>
+        </p>
+    </div>
+
+
+    <div class="para_1">
+        <h3 class="one_heading">Benefits</h3>
+        <p class="one_para">The consumption of milk is heralded for its profound health benefits, enriching both body and soul. Here are some notable advantages associated with milk consumption:<p>
+
+     
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Bone health:</strong> Milk emerges as a stalwart defender of bone health, fortified with calcium and vitamin D, indispensable allies in the quest for strong and resilient bones. Regular consumption of milk ensures optimal calcium absorption, safeguarding against the ravages of osteoporosis and brittle bones.
+          </span>
+        </p>
+        
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Muscle Growth and Repair:</strong> The high-quality proteins abundant in milk serve as building blocks for muscle growth, repair, and maintenance. Whether fueling a rigorous workout or aiding in post-exercise recovery, milk stands as a stalwart companion in the pursuit of peak physical performance.
+          </span>
+        </p>
+
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Weight Management:</strong> Milk assumes a pivotal role in weight management regimes, thanks to its satiating combination of protein and fats. By curbing cravings and regulating appetite, milk fosters a sense of fullness and satisfaction, empowering individuals to navigate their dietary journey with ease and efficacy.
+          </span>
+        </p>
+
+         <p class="info-para">
+           <span class="info-box">
+              <strong>Hydration:</strong>With its high water content and replenishing electrolytes, milk emerges as a potent hydrating agent, offering respite from the parched throes of dehydration. Whether quenching thirst after physical exertion or cooling the palate on a scorching summer's day, milk stands as a refreshing oasis of hydration.
+          </span>
+        </p>
+
+         <p class="info-para">
+           <span class="info-box">
+              <strong>Nutrient Absorption:</strong>The presence of lactose in milk facilitates the efficient absorption of calcium and other minerals, ensuring their seamless assimilation into the body's intricate matrix. This synergistic interplay between nutrients optimizes metabolic efficiency, fortifying the body's defenses against nutritional deficiencies and metabolic disorders.
+          </span>
+        </p>
+    </div>
+
+    <div class="para_1">
+        <h3 class="one_heading">Cultural Significance</h3>
+        <p class="one_para">Beyond its nutritional and culinary prowess, milk holds profound cultural significance in societies worldwide:</p>
+
+     
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Rituals and Ceremonies:</strong> Milk features prominently in traditional rituals, ceremonies, and celebrations, symbolizing purity, fertility, and nourishment. From ceremonial libations to symbolic offerings, milk transcends its culinary utility to embody cultural values and spiritual significance.
+          </span>
+        </p>
+
+        <p class="info-para">
+           <span class="info-box">
+              <strong>Social Cohesion:</strong>The sharing of milk fosters social cohesion and communal bonds, serving as a conduit for interpersonal connections and collective celebrations across diverse cultural landscapes.Milk epitomizes the symbiotic relationship between nutrition, culture, and tradition, enriching lives and forging connections that transcend geographical boundaries and temporal divides. 
+          </span>
+        </p>
+    </div>
+
+    <div class="para_1">
+        <h2 class="second_heading">Frequently Asked Questions</h2>
+        <h3 class="one_heading">What is it about milk that makes it a nutritious drink?</h3>
+        <p class="one_para">Milk has all the essential nutrients that are necessary for the human body, including proteins, fats, carbohydrates, vitamins, and minerals. It contains vast amounts of good-quality proteins, calcium, and other micronutrients required for bone health, muscle activity as well and good general body function.</p>
+
+        <h3 class="one_heading">Can lactose-intolerant people consume milk?</h3>
+        <p class="one_para">Conventional cow’s milk has lactose which causes gastrointestinal problems in individuals with lactose intolerance but some alternatives include lactose-free cow milk or non-dairy nut milk. Furthermore, there are some types of milk like goat’s that can be taken by those having issues to digesting them because they have less lactose compared to cow’s.</p>
+
+        <h3 class="one_heading">How does Milk affect your Bones?</h3>
+        <p class="one_para">In terms of bone health, substantial contributions come from milk which is rich in vitamin D and calcium. The role of calcium is to give bones their structure while vitamin D assists in absorbing and utilizing calcium therefore ensuring efficient bone mineralization and optimal density.</p>
+
+        <h3 class="one_heading">Can I use Milk in my weight loss plan?</h3>
+        <p class="one_para">Definitely! One can take this into account when planning what he or she eats or drinks. This combination of protein and fat helps to control hunger pangs thus making it a very satisfying choice of beverage. Additionally, its nutrient density provides essential vitamins and minerals plus it’s not high calorie so you can keep your overall intake under check even during weight management hence promoting your health holistically during such efforts.</p>
+    </div>
+
+    <div class="below_content">
+        <div class="below_1">
+            <h3 class="below_3heading">Buy Milk at Online grocery store in india</h3>
+            <p class="below_para">Are you super fond of online shopping because you hate crowded supermarkets? Now you don't need to be worry as Blinkit is delivering Milk at your doorstep with easy returns for your complete peace of mind.Get Milk delivered to your home. you can check Milk price before buying.We deliver Milk at Delhi, Gurgaon, Kolkata, Lucknow, Mumbai, Bengaluru, Ahmedabad, Noida, Ghaziabad, Faridabad, Hyderabad, Jaipur, Pune, Chennai, Chandigarh, Ludhiana, Vadodara, Meerut, Kanpur, Panchkula, Kharar, Amritsar, Bhopal, Indore, Zirakpur, Jalandhar, Dehradun, Agra, Mohali, Goa, Patiala, Sonipat, Bhiwadi, Kota, Rohtak, Bahadurgarh, Haridwar, Bathinda, Kochi, Jodhpur 
+            <br><div class="last_below_content">Buy from several popular brands like</div></p>
+        </div>
+
+        <div class="price-container">
+            <h2>Milk Price List</h2>
+
+            <div class="table-header">
+                <span>Milk</span>
+                <span>Price</span>
+           </div>
+
+         <ol class="price-list">
+
+           <li>
+              <span class="name">Mother Dairy FIT Life Homogenized Double Toned Milk</span>
+              <span class="rate">Rs.10</span>
+           </li>
+
+            <li>
+               <span class="name">Amul Taaza Toned Milk</span>
+               <span class="rate">Rs.29</span>
+           </li>
+
+           <li>
+               <span class="name">Amul Gold Full Cream Milk</span>
+                <span class="rate">Rs.35</span>
+          </li>
+
+           <li>
+              <span class="name">Mother Dairy Toned Milk</span>
+               <span class="rate">Rs.29</span>
+           </li>
+
+            <li>
+                <span class="name">Mother Dairy Cow Milk</span>
+                <span class="rate">Rs.30</span>
+           </li>
+
+            <li>
+              <span class="name">Mother Dairy Full Cream Milk</span>
+              <span class="rate">Rs.35</span>
+            </li>
+
+            <li>
+               <span class="name">Amul Taaza Homogenised Toned Milk</span>
+               <span class="rate">Rs.75</span>
+           </li>
+
+            <li>
+                <span class="name">Amul Buffalo A2 Milk</span>
+                <span class="rate">Rs.38</span>
+           </li>
+
+            <li>
+               <span class="name">Amul Lactose Free Milk</span>
+               <span class="rate">Rs.25</span>
+           </li>
+
+            <li>
+               <span class="name">Mother Dairy Pro Milk</span>
+               <span class="rate">Rs.35</span>
+           </li>
+
+         </ol>
+
+          <p class="update">This data was last updated on 2/4/2026</p>
+     </div>
+
+    </div>
+</section>
+
+<footer>
+
+  <section class="footer_main">
+
+    <section class="section_4">
+
+      <h3 class="footer_heading">Useful Links</h3>
+
+      <div class="content_1">
+          <div class="column_1">
+            <ol class="items">
+            <li>Blog</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>FAQs</li>
+            <li>Security</li>
+            <li>Content</li>
+            </ol>
+          </div>
+
+         <div class="column_2">
+          <ol class="items">
+            <li>Partner</li>
+            <li>Franchise</li>
+            <li>Seller</li>
+            <li>Warehouse</li>
+            <li>Deliver</li>
+            <li>Resources</li>
+          </ol>
+         </div>
+
+         <div class="column_3">
+          <ol class="items">
+            <li>Recipes</li>
+            <li>Bistro</li>
+            <li>District</li>
+            <li>Blinkit Ambulance</li>
+          </ol>
+         </div>
+      </div>
+
+    </section>
+
+    <section class="section_categories">
+
+      <div class="categories_header">
+        <h3 class="categories_title">Categories</h3>
+        <a href="#" class="see_all">see all</a>
+      </div>
+
+      <div class="categories_content">
+          <div class="cat_column">
+          <ul class="cat_items">
+            <li>Vegetables & Fruits</li>
+            <li>Cold Drinks & Juices</li>
+            <li>Bakery & Biscuits</li>
+            <li>Dry Fruits, Masala & Oil</li>
+            <li>Paan Corner</li>
+            <li>Pharma & Wellness</li>
+            <li>Personal Care</li>
+            <li>Magazines</li>
+            <li>Electronics & Electricals</li>
+            <li>Toys & Games</li>
+            <li>Rakhi Gifts</li>
+          </ul>
+          </div>
+
+          <div class="cat_column">
+          <ul class="cat_items">
+            <li>Dairy & Breakfast</li>
+            <li>Instant & Frozen Food</li>
+            <li>Sweet Tooth</li>
+            <li>Sauces & Spreads</li>
+            <li>Organic & Premium</li>
+            <li>Cleaning Essentials</li>
+            <li>Pet Care</li>
+            <li>Kitchen & Dining</li>
+            <li>Stationery Needs</li>
+            <li>Print Store</li>
+          </ul>
+          </div>
+
+          <div class="cat_column">
+          <ul class="cat_items">
+            <li>Munchies</li>
+            <li>Tea, Coffee & Milk Drinks</li>
+            <li>Atta, Rice & Dal</li>
+            <li>Chicken, Meat & Fish</li>
+            <li>Baby Care</li>
+            <li>Home Furnishing & Decor</li>
+            <li>Beauty & Cosmetics</li>
+            <li>Fashion & Accessories</li>
+            <li>Books</li>
+            <li>E-Gift Cards</li>
+          </ul>
+          </div>
+     </div>
+
+    </section>
+
+    <section class="company_name">
+        <div class="company_para">© Blink Commerce Private Limited, 2016-2026</div>
+
+            <div class="appss">
+               <div class="Download_link">Download App</div>
+
+               <div class="download_appbutton">
+                  <div class="platform">
+                     <img src="/images/appstore.png" alt="App Store">
+                  </div>
+
+                  <div class="platform">
+                     <img src="/images/googleplay.png" alt="google play">
+                  </div>
+               </div>
+            </div> 
+        <div class="social_platform">
+            <div class="social_site">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="50" fill="white"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M42.9417 77.2H54.1817V49.9967H61.68L62.6733 40.6233H54.1817L54.1933 35.93C54.1933 33.4867 54.4267 32.175 57.9333 32.175H62.62V22.8H55.12C46.1117 22.8 42.9417 27.3483 42.9417 34.995V40.6233H37.3267V49.9983H42.9417V77.2V77.2ZM50 100C22.3867 100 0 77.6133 0 50C0 22.385 22.3867 0 50 0C77.6133 0 100 22.385 100 50C100 77.6133 77.6133 100 50 100Z" fill="#1F1F1F"></path></svg>
+            </div>
+
+             <div class="social_site">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px"><circle cx="25" cy="25" r="25" fill="black"></circle><path d="M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z" fill="white"></path></svg>
+            </div>
+
+            <div class="social_site">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6973_248115)"><rect width="100" height="100" rx="50" fill="white"></rect><path d="M49.5935 59.3496C54.5326 59.3496 58.5366 55.3456 58.5366 50.4065C58.5366 45.4674 54.5326 41.4634 49.5935 41.4634C44.6544 41.4634 40.6504 45.4674 40.6504 50.4065C40.6504 55.3456 44.6544 59.3496 49.5935 59.3496Z" fill="#1F1F1F"></path><path d="M60.7724 28.4553H38.4146C35.1626 28.4553 32.3171 29.4716 30.4878 31.3008C28.6585 33.1301 27.6423 35.9756 27.6423 39.2276V61.5854C27.6423 64.8374 28.6585 67.6829 30.6911 69.7155C32.7236 71.5447 35.3659 72.561 38.6179 72.561H60.7724C64.0244 72.561 66.8699 71.5447 68.6992 69.7155C70.7317 67.8862 71.748 65.0407 71.748 61.7886V39.4309C71.748 36.1789 70.7317 33.5366 68.9024 31.5041C66.8699 29.4716 64.2276 28.4553 60.7724 28.4553ZM49.5935 64.2276C41.8699 64.2276 35.7724 57.9268 35.7724 50.4065C35.7724 42.6829 42.0732 36.5854 49.5935 36.5854C57.1138 36.5854 63.6179 42.6829 63.6179 50.4065C63.6179 58.1301 57.3171 64.2276 49.5935 64.2276ZM64.0244 39.2276C62.1951 39.2276 60.7724 37.8049 60.7724 35.9756C60.7724 34.1463 62.1951 32.7236 64.0244 32.7236C65.8537 32.7236 67.2764 34.1463 67.2764 35.9756C67.2764 37.8049 65.8537 39.2276 64.0244 39.2276Z" fill="#1F1F1F"></path><path d="M50 0C22.3577 0 0 22.3577 0 50C0 77.6423 22.3577 100 50 100C77.6423 100 100 77.6423 100 50C100.203 22.3577 77.6423 0 50 0ZM76.626 61.7886C76.626 66.4634 75 70.5285 72.1545 73.374C69.3089 76.2195 65.2439 77.6423 60.7724 77.6423H38.6179C34.1463 77.6423 30.0813 76.2195 27.2358 73.374C24.187 70.5285 22.7642 66.4634 22.7642 61.7886V39.4309C22.7642 30.0813 29.065 23.5772 38.6179 23.5772H60.9756C65.6504 23.5772 69.5122 25.2033 72.3577 28.0488C75.2032 30.8943 76.626 34.7561 76.626 39.4309V61.7886V61.7886Z" fill="#1F1F1F"></path></g><defs><clipPath id="clip0_6973_248115"><rect width="100" height="100" rx="50" fill="white"></rect></clipPath></defs></svg>
+            </div>
+
+            <div class="social_site">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="50" fill="#1F1F1F"></rect><path d="M38.5 37.5H28V72H38.5V37.5Z" fill="white"></path><path d="M64.0045 37.5C58 37.5 56.335 39.468 55 42V37.5H44.5V72H55V52.5C55 49.5 55 46.5 60.25 46.5C65.5 46.5 65.5 49.5 65.5 52.5V72H76V52.5C76 43.5 74.5 37.5 64.0045 37.5Z" fill="white"></path><path d="M33.25 34.5C36.1495 34.5 38.5 32.1495 38.5 29.25C38.5 26.3505 36.1495 24 33.25 24C30.3505 24 28 26.3505 28 29.25C28 32.1495 30.3505 34.5 33.25 34.5Z" fill="white"></path></svg>
+            </div>
+
+           <div class="social_site">
+              <img src="blinkit-icon.svg" alt="Blinkit" width="43" height="43">
+           </div>
+
+        </div>
+    </section>
+
+    <section class="last_container">
+        <div class="last_para">“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate <br>services business operated by “Redstone Consultancy Services Private Limited”.
+        </div>
+    </section>
+
+  </section>
+
+</footer>
+
+</body>
+</html>
